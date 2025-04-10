@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Gallery = () => {
+function Gallery() {
     const [tours, setTours] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -43,3 +43,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
