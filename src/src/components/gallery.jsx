@@ -25,6 +25,11 @@ function Gallery() {
         return <h2>Loading...</h2>;
     };//display loading message when loading
 
+
+    if (!loading && tours.length === 0) {
+        return <h2>Error loading tours or no tours available.</h2>;
+    };//display error message if fetch fails
+
     return (
         <div>
             <h1>Tour Gallery</h1>
