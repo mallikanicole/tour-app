@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Gallery from './components/gallery';
+import Gallery from './components/Gallery.jsx';
+import './style.css'; 
 
 function App() {
   const [tours, setTours] = useState([]);
